@@ -1,3 +1,7 @@
+:root{
+    --color-primario:  #2e86c1 ;
+    --color-secundario:  #3498db ;
+}
 
 *{
     padding: 0;
@@ -9,50 +13,55 @@ html{
     font-size: 62.5%;
 }
 
-body{
-    background-color: black;
+.main_header{
+    min-width: 100vw;
+    height: 15vh;
+    background-color: var(--color-primario);
     display: flex;
-    flex-wrap: wrap;
-    
+    justify-content: flex-start;
+    align-items: center;
+    }
+
+.main_header_logo{
+    width: 5rem;
+    height: 5rem;
+    border: black dotted;
+
 }
 .main_conteiner{
-    align-items: flex-end;
-    min-width: 32rem;
-    max-width: 60rem;
-    min-height: 50rem;
-    background-color: gray;
+    display: flex;
     flex-direction: column;
-}
+    align-items: center;
+    min-width: 100vw;
+    min-height: 70vh;
+    background-color: whitesmoke;
 
-.main_conteiner article{
-    background-color: azure;
-    margin: 0 1rem 0rem 1rem;
-    padding: 1rem;
-    border-radius: 2%;
-    border: .05rem solid black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.main_conteiner article h1{
-    font-size: 1.6rem;
-    color: black;
-    text-align: center;
+.main_conteiner div{
+    padding: 0rem 4rem 2rem 4rem;
+}
+.main_conteiner h1{
+    font-size: 2rem;
+    color: var(--color-primario);
     text-transform: uppercase;
-      
 }
 
-.main_conteiner article p{
+.main_conteiner p{
     text-align: justify;
-    font-size: 1.2rem;
-    
+    padding: 1rem;
 }
-.aside_main{
-    align-items: flex-start;
-    min-height: 5rem;
-    min-width: 5rem;
 
+.main_footer{
+    width: 100vw;
+    height: 15vh;
+    background-color:var(--color-secundario);
+    display: flex;
+    justify-content: center ;
+    align-items: center;
 }
-.aside_main div{
-    background-color: white;
-    height: 5rem;
+
+.main_footer figure{
     width: 5rem;
+    height: 5rem;
+    border: black dotted;
 }
